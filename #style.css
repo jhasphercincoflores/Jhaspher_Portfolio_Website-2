@@ -1,0 +1,187 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #f1f5f9;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background: #111c32;
+    padding: 20px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #85f838;
+    font-size: 25px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    color: rgb(187, 11, 11);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #38bdf8;
+}
+
+/* Home */
+.home {
+    min-height: 85vh;
+    padding: 70px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.welcome {
+    color: #38bdf8;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.home h1 {
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.home h1 span,
+.section h2 span {
+    color: #38bdf8;
+}
+
+.home h3 {
+    color: #94a3b8;
+    margin-bottom: 15px;
+}
+
+.home-content p {
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #38bdf8;
+    color: #0f172a;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: white;
+}
+
+/* Profile Picture */
+.home-image img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #38bdf8;
+}
+
+/* Sections */
+.section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.section > p {
+    max-width: 750px;
+    margin: auto;
+}
+
+/* Cards */
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 15px;
+    width: 280px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border: 1px solid #38bdf8;
+}
+
+.card h3 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background: #111c32;
+    text-align: center;
+    padding: 20px;
+    color: #94a3b8;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .home h1 {
+        font-size: 32px;
+    }
+
+    .home-image img {
+        width: 220px;
+        height: 220px;
+    }
+}
